@@ -1,14 +1,14 @@
-import '../App.css';
+import "../App.css";
 
 const tabs = [
+  { label: "Tutti", value: "Tutti" },
+  { label: "Completati", value: "Completati" },
+  { label: "In Corso", value: "In Corso" },
+  { label: "Wishlist", value: "Wishlist" },
+  { label: "Abbandonati", value: "Abbandonati" },
+];
 
-{label:"Tutti", value : "Tutti"},
-{label:"Completati", value : "Completati"},
-{label:"In Corso", value : "In Corso"},
-{label:"Wishlist", value : "Wishlist"},
-{label:"Abbandonati", value : "Abbandonati"},]
-
-const getTabClass = (isActive) => isActive ? "active-tab" : "idle-tab";
+const getTabClass = (isActive) => (isActive ? "active-tab" : "idle-tab");
 
 const Navigation = ({ activeTab, setActiveTab }) => {
   return (

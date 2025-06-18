@@ -4,6 +4,7 @@ import Header from  './components/header.jsx';
 import GameList from './components/GameList.jsx';
 import Navigation from './components/Navigation.jsx';
 import { useState } from 'react';
+import GameStats from './components/GameStats';
 
 function App() {
   const giochi = getAllGames();
@@ -20,6 +21,7 @@ function App() {
     <>
       <Header gamerTag={gamerTag} totalGames={giochi.length} />
       <Navigation activeTab={activeTab} setActiveTab={setActiveTab} />
+      <GameStats games={giochi} />
       <GameList games={giochiFiltrati} />
     </>
   );
