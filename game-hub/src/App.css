@@ -20,6 +20,7 @@
   transition: transform 0.3s ease;
   cursor: pointer;
   overflow: hidden;
+  background-color: rgb(87, 86, 85);
 }
 
 .game-card:hover {
@@ -33,4 +34,12 @@
   display: block;
   border-radius: 8px;
   object-fit: cover;
+}
+
+.tab-navigation {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+ 
+  
 }
