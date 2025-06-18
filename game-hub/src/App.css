@@ -1,16 +1,28 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0px;
   text-align: center;
 }
 
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))
+  
 }
 
-.card {
-  padding: 2em;
+
+.game-card {
+  padding: 16px;
+  width: 150%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+ 
 }
 
+.game-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
